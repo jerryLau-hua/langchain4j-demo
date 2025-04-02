@@ -28,7 +28,7 @@ langchain4j use in pure java project and springboot project
 ### 启动步骤
 1. 克隆仓库
 ```bash
-git clone [https://github.com/your-repo/langchain4j-demo.git](https://github.com/jerryLau-hua/langchain4j-demo.git)
+git clone https://github.com/jerryLau-hua/langchain4j-demo.git
 ```
 2. 安装依赖
 mvn clean install
