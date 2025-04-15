@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: mcp-server-stdio
+  main:
+    web-application-type: none
+    banner-mode: off
+  ai:
+    dashscope:
+      api-key: sk-xxxxxxxxxxxxxxx
+    mcp:
+      server:
+        name: my-server
+        version: 0.0.1
+
+
+#log
+LOG_DIR_PRO: /var/log/
+
+server:
+#  port: 9093
+  #  ---------log config start----------
+  tomcat:
+    accesslog:
+      enabled: true
+      directory: D:\workspace\code-demo\langchain4j-demo\\logs
+      file-date-format: yyyy-MM-dd
+      pattern: "[%{yyyy-MM-dd'T'HH:mm:ss.SSSZZZZ}t][%I][access|%m|%q|%U|%a|%D|%s|%b][%{tRequestId}i|%{X-Request-ID}i|%{Referer}i|%{User-Agent}i][%{X-B3-TraceId}i|%{X-B3-SpanId}i|%{X-B3-ParentSpanId}i|%{X-Span-Export}i][%{keywords}i]"
+      prefix: trance
+      suffix: .log
+      rename-on-rotate: false
+      rotate: true
+#---------log config end----------

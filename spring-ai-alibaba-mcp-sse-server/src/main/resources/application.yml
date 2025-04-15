@@ -1,0 +1,23 @@
+server:
+  port: 8085
+
+spring:
+  application:
+    name: mcp-server-sse
+  main:
+    banner-mode: off
+  ai:
+    dashscope:
+      api-key: sk-xxxxxxxxxxxxxxxxxxxxxx
+    mcp:
+      server:
+        name: balance
+        version: 0.0.1
+
+# 调试日志
+logging:
+  level:
+    io:
+      modelcontextprotocol:
+        client: DEBUG
+        spec: DEBUG

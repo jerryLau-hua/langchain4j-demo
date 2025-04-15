@@ -1,0 +1,11 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: spring-ai-alibaba-demo
+  ai:
+    dashscope:
+      api-key: sk-XXXXXXXXXXXXXXXXXXXXXXX
+
+
