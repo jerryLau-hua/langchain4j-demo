@@ -1,4 +1,4 @@
-# LangChain4j Spring Boot 集成示例
+# java-ai  Spring Boot 集成示例
 
 ## 项目概述
 基于Spring Boot的LangChain4j集成示例，实现以下功能：
