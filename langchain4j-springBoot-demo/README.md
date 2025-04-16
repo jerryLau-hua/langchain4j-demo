@@ -13,9 +13,9 @@
 - **AI核心**: LangChain4j 1.0.0-beta2
 - **向量存储**: DuckDB
 - **模型服务**:
-    - 阿里云 DashScope
-    - DeepSeek
-    - Ollama（本地部署）
+  - 阿里云 DashScope
+  - DeepSeek
+  - Ollama（本地部署）
 
 ## 快速开始
 
@@ -26,10 +26,10 @@
 ### 启动步骤
 1. 克隆仓库
 ```bash
-git clone https://github.com/your-repo/langchain4j-demo.git
+git clone https://github.com/jerryLau-hua/langchain4j-demo.git
 ```
 2. 安装依赖
-mvn clean install
+   mvn clean install
 3. 配置API密钥
 - 在application.properties中配置API密钥
 - 在QwenEmbeddingModel.builder()

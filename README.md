@@ -7,8 +7,16 @@
 - 🛠️ 工具函数调用
 - 💬 流式对话接口
 - 🧠 持久化聊天记忆
+参照：langchain4j-mvn-demo
+  langchain4j-springBoot-demo
+
+基于Spring-ai-alibaba ，实现以下功能：
+- 🤖 简单对话实现
+- 📚 基于mcp 实现 标准输入输出服务端与客户端
+- 🛠️ 基于mcp 实现 流式调用服务端
 
 ## 技术栈
+### 基于Spring Boot的LangChain4j集成技术栈
 - **框架**: Spring Boot 3.1.5
 - **AI核心**: LangChain4j 1.0.0-beta2
 - **向量存储**: DuckDB
@@ -16,6 +24,12 @@
     - 阿里云 DashScope
     - DeepSeek
     - Ollama（本地部署）
+
+### 基于Spring-ai-alibaba 的技术栈
+- **框架**: Spring Boot 3.4.3
+- **AI核心**:   spring-ai-alibaba 1.0.0-M6.1
+- **模型服务**:
+    - 阿里云 DashScope
 
 ## 快速开始
 
@@ -28,25 +42,6 @@
 ```bash
 git clone https://github.com/jerryLau-hua/langchain4j-demo.git
 ```
-2. 安装依赖
-mvn clean install
-3. 配置API密钥
-- 在application.properties中配置API密钥
-- 在QwenEmbeddingModel.builder()
-  .apiKey("sk-xxxxx") // 替换真实API Key
-  .build();
-4. 启动应用
-```bash
- mvn spring-boot:run 
-```
+2. 参照每个模块的README.md进行配置和启动
 
-## 接口文档
-
-
-
-| 端点                | 方法 | 说明                                     |
-| ------------------- | ---- | ---------------------------------------- |
-| /ai/simple/doAsk    | GET  | 基础问答接口                             |
-| /ai/simple/doAskSSE | GET  | 流式输出/记忆化接口（text/event-stream） |
-| /ai/rag/doAsk       | GET  | RAG增强问答接口                          |
 
